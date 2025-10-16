@@ -5,24 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>01 - Form</title>
     <link rel="stylesheet" href="../_styles/styles.css" />
+    <style>
+      input[type="radio"] {
+        height: 24px;
+      }
+    </style>
   </head>
   <body>
-    <h1>01 - Form</h1>
-    <form action="/submit">
-      <span>Name</span>
-      <input type="text" />
-      <br /><br />
-      <label>
-        Email
-        <input type="text" />
-      </label>
-      <br /><br />
-      <span>Favorite Character</span>
-      <div><input type="radio" id="spongebob" />Spongebob</div>
-      <div><input type="radio" id="patrick" />Patrick</div>
-      <div><input type="radio" id="sandy" />Sandy</div>
-      <br />
-      <button>Submit</button>
-    </form>
+    <main>
+      <form action="/submit">
+        <h1>01 - Form</h1>
+        <label for="name">Name</label>
+        <input name="name" id="name" type="text" />
+
+        <br /><br />
+        <label>
+          Email
+          <input type="text" />
+        </label>
+        <br /><br />
+        <span>Favorite Character</span>
+        <div>
+          <input type="radio" name="spongebob" id="spongebob" /><label
+            for="spongebob"
+            >Spongebob</label
+          >
+        </div>
+        <div>
+          <input type="radio" name="patrick" id="patrick" /><label for="patrick"
+            >Patrick</label
+          >
+        </div>
+        <div>
+          <input type="radio" name="sandy" id="sandy" /><label for="sandy"
+            >Sandy</label
+          >
+        </div>
+        <br />
+        <button>Submit</button>
+      </form>
+    </main>
   </body>
 </html>
